@@ -1,0 +1,24 @@
+* {
+    border: 0px solid red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 55px;
+}
+h2 {
+  color: #7d97ad;
+}
+hr {
+  border: 0;
+  border-top: 2px solid #7d97ad;
+  border-bottom: 2px solid #7d97ad;
+}
+.title-logo{
+  margin: 20px;
+}
