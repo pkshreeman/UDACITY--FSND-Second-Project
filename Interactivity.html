@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<!Yes, it's in hmtl, and in English>
+<!--Yes, it's in hmtl, and in English-->
 
 <head>
     <meta charset="utf-8">
-    <! Character decoding: https://tools.ietf.org/html/rfc3629>
-    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
-    <! To Microsoft for UX>
+    <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!mobile UX>
+    <!--responsiveness requires this configuration -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/interactive.css">
-    <script rel="text/javascript" scr="js/bootstrap.min.js"></script>
     <script rel="text/javasript" src="js/jquery-3.1.1.min.js"></script>
-    <title> Portfolio Project 2 </title>
+    <script rel="text/javascript" src="js/bootstrap.min.js"></script>
+    <title> Portfolio Project Submission </title>
 </head>
 
 <body>
@@ -35,7 +33,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img class="img-responsive" src="img/Main.png" alt="Big placeholder of 950x400 that is responsive">
+                <img class="img-responsive main-image" src="img/Main1.png" alt="Big image of lopsided html code">
             </div>
         </div>
         <div class="row">
@@ -45,31 +43,61 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <img class="img-responsive" src="img/Appify.png" alt="A responsive Appify picture">
+                <img class="img-responsive" data-toggle="modal" data-target="#project1" src="img/Appify.png" alt="A responsive Appify picture">
                 <h3> APPIFY </h3>
-                <p> https://github.com/udacity/Appify </p>
+                <p> https://github.com/udacity/Appify/ </p>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive" src="img/Sunflower.png" alt="A responsive sunflower">
+                <img class="img-responsive" data-toggle="modal" data-target="#project2" src="img/Sunflower.png" alt="A responsive Sunflower">
                 <h3> SUNFLOWER </h3>
-                <p> https://github.com/udacity/Sunflower </p>
+                <p> https://github.com/udacity/Sunflower/ </p>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive" data-toggle="modal" data-target="#project1" src="img/Bokeh.png" alt="A responsive picture with modal setup">
+                <img class="img-responsive" data-toggle="modal" data-target="#project3" src="img/Bokeh.png" alt="A responsive picture of Bokeh">
                 <h3> BOKEH  </h3>
-                <p> https://github.com/udacity/Boken </p>
+                <p> https://github.com/udacity/Bokeh/ </p>
             </div>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModal-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModal-1">Project #3</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="img/Bokeh.png"> This is my first project for the modal class.
+                    <img class="img-responsive" src="img/Bokeh.png" alt="Modal with image of Bokeh"> This is my third project for the modal class.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModal-2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModal-2">Project 2</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/Sunflower.png" alt="Sunflower picture inside the modal"> This is my second project for the modal class.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="Modal-First" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="Modal-First">First Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/Appify.png" alt=" Appify image inside a modal"> This is my first project for the modal class.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
