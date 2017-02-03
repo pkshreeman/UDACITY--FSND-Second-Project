@@ -10,14 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/interactive.css">
-    <script rel="text/javasript" src="js/jquery-3.1.1.min.js"></script>
-    <script rel="text/javascript" src="js/bootstrap.min.js"></script>
     <title> Portfolio Project Submission </title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <header class="row">
             <div class="col-md-6">
                 <img class="img-responsive title-logo" src="img/logo.png" alt="Logo">
             </div>
@@ -25,39 +23,42 @@
                 <h1> JANE DOETTE </h1>
                 <h4> FRONT-END NINJA </h4>
             </div>
-        </div>
-        <div class="row">
+        </header>
+        <div class="row" id="line-break">
             <div class="col-md-12">
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="img-responsive main-image" src="img/Main1.png" alt="Big image of lopsided html code">
-            </div>
-        </div>
+        <main class="row">
+            <picture class="col-md-12">
+                <source media="(max-width:600px)" srcset="img/Main500.png">
+                <source media="(max-width:900px)" srcset="img/Main850.png">
+                <source media="(max-width:1200px)" srcset="img/Main1076.png">
+                <img class="img-responsive main-image" src="img/Main2050.png" alt="Big image of lopsided html code">
+            </picture>
+        </main>
         <div class="row">
             <div class="col-md-12">
                 <h2>Featured Work</h2>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
+        <footer class="row text-center">
+            <section class="col-md-4">
                 <img class="img-responsive" data-toggle="modal" data-target="#project1" src="img/Appify.png" alt="A responsive Appify picture">
                 <h3> APPIFY </h3>
                 <p> https://github.com/udacity/Appify/ </p>
-            </div>
-            <div class="col-md-4">
+            </section>
+            <section class="col-md-4">
                 <img class="img-responsive" data-toggle="modal" data-target="#project2" src="img/Sunflower.png" alt="A responsive Sunflower">
                 <h3> SUNFLOWER </h3>
                 <p> https://github.com/udacity/Sunflower/ </p>
-            </div>
-            <div class="col-md-4">
+            </section>
+            <section class="col-md-4">
                 <img class="img-responsive" data-toggle="modal" data-target="#project3" src="img/Bokeh.png" alt="A responsive picture of Bokeh">
                 <h3> BOKEH  </h3>
                 <p> https://github.com/udacity/Bokeh/ </p>
-            </div>
-        </div>
+            </section>
+        </footer>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModal-1" aria-hidden="true">
@@ -105,6 +106,8 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
